@@ -3,13 +3,15 @@
     <{% if page.layout == "index" %}h1{% else %}div{% endif %} class="site-title">
       <a href="{{ site.baseurl }}/">
         {% unless page.url == "/" %}
-		DongleAmi
-          <span class="back-arrow icon">{% include svg/back-arrow.svg %}</span>
+		Dongle<br>
+		Ami
+          <!--<span class="back-arrow icon">{% include svg/back-arrow.svg %}</span>
         {% endunless %}
-        {{ site.title }}
+        {{ site.title }}-->
+		
       </a>
     </{% if page.layout == "index" %}h1{% else %}div{% endif %}>
-    <p class="lead">{{ site.description }}</p>
+    <p class="lead">동그아미의 블로그<!--{{ site.description }}--></p>
   </header>
   {% include sidebar-nav-links.html %}
 
